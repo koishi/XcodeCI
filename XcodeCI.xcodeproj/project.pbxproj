@@ -56,6 +56,9 @@
 		A6506ACA18365DF700072EF3 /* XcodeCITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeCITests-Info.plist"; sourceTree = "<group>"; };
 		A6506ACC18365DF700072EF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A6506ACE18365DF700072EF3 /* XcodeCITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeCITests.m; sourceTree = "<group>"; };
+		A6506AE3183680A500072EF3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A6506AE4183680A500072EF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A6506AE5183680A500072EF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 				A6506AA218365DF700072EF3 /* CoreGraphics.framework */,
 				A6506AA418365DF700072EF3 /* UIKit.framework */,
 				A6506AC218365DF700072EF3 /* XCTest.framework */,
+				A6506AE2183680A500072EF3 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +159,16 @@
 				A6506ACB18365DF700072EF3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6506AE2183680A500072EF3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6506AE3183680A500072EF3 /* AppKit.framework */,
+				A6506AE4183680A500072EF3 /* CoreData.framework */,
+				A6506AE5183680A500072EF3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +326,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -351,7 +364,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -409,7 +421,6 @@
 		A6506AD618365DF700072EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeCI.app/XcodeCI";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -432,7 +443,6 @@
 		A6506AD718365DF700072EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeCI.app/XcodeCI";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -467,6 +477,7 @@
 				A6506AD418365DF700072EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6506AD518365DF700072EF3 /* Build configuration list for PBXNativeTarget "XcodeCITests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +486,7 @@
 				A6506AD718365DF700072EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
