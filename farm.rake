@@ -2,14 +2,15 @@ require "pp"
 require "xcodeproj"
 
 # specify your Xcode project and workspace if needed
-$PROJECT = `find *.xcodeproj -maxdepth 0 2>/dev/null`.split("\n").first
-$WORKSPACE = `find *.xcworkspace -maxdepth 0 2>/dev/null`.split("\n").first
-$Xcodeproj = Xcodeproj::Project.open $PROJECT
-$TARGETS = $Xcodeproj.targets.map{|t| t.name }
+$PROJECT = `find *.xcodeproj -maxdepth 0 2>/dev/null`.split("\n").first unless $PROJECT
+$WORKSPACE = `find *.xcworkspace -maxdepth 0 2>/dev/null`.split("\n").first unless $WORKSPACE
+proj = Xcodeproj::Project.open $PROJECT
+$TARGETS = proj.targets.map{|t| t.name }
 $SCHEMES = Xcodeproj::Project::schemes($PROJECT).map{|s| s }
-$CONFIGURATIONS = $Xcodeproj.build_configurations.map{|c| c.name }
+$PRIMARY_SCHEME = $PRIMARY_SCHEME unless $PRIMARY_SCHEME
+$CONFIGURATIONS = proj.build_configurations.map{|c| c.name }
 $INFOPLIST_FILES = {}
-$Xcodeproj.targets.each do |target|
+proj.targets.each do |target|
   name = target.name
   $INFOPLIST_FILES[name] = {}
   $CONFIGURATIONS.each do |configuration|
@@ -23,11 +24,39 @@ task :info do
   puts "Project:\t#{$PROJECT}"
   puts "Workspace:\t#{$WORKSPACE}"
   puts "Schemes:\t#{$SCHEMES}"
+  puts "Primary Scheme:\t#{$PRIMARY_SCHEME}"
   puts "Targets:\t#{$TARGETS}"
   puts "Configurations:\t#{$CONFIGURATIONS}"
   puts "InfoPlist:"
   pp $INFOPLIST_FILES
   puts "Update Leveles:\t#{$UPDATES}"
+end
+
+# action
+def build(scheme,configuration="")
+  cmd = "xctool #{project_or_workspace} -scheme #{scheme.shellescape} build"
+  cmd += " -configuration #{configuration}" unless configuration.empty?
+  system cmd
+end
+# clean scheme
+def clean (scheme)
+  system "xctool clean #{project_or_workspace} -scheme #{scheme.shellescape}"
+end
+# create archive
+def archive(scheme)
+  system "xctool #{project_or_workspace} archive -scheme #{scheme.shellescape}"
+end
+# get project or workspace path
+def project_or_workspace
+  if $WORKSPACE
+    "-workspace #{$WORKSPACE}"
+  else
+    "-project #{$PROJECT}"
+  end
+end
+# run tests
+def test(scheme)
+  system "xctool -sdk iphonesimulator #{project_or_workspace} -scheme #{scheme.shellescape} test -parallelize -test-sdk iphonesimulator"
 end
 
 # build tasks
@@ -36,15 +65,9 @@ end
 # build:SCHEME
 # build:CONFIGURATION
 # build:SCHEME:CONFIGURATION
-def build(scheme,configuration="")
-  cmd = "xctool #{project_or_workspace} -scheme #{scheme.shellescape} build"
-  cmd += " -configuration #{configuration}" unless configuration.empty?
-  system cmd
-end
-
-desc "build primary scheme (currently \"#{$SCHEMES.first}\")"
+desc "build primary scheme (currently \"#{$PRIMARY_SCHEME}\")"
 task :build do
-  build $SCHEMES.first
+  build $PRIMARY_SCHEME
 end
 namespace :build do
   desc "build all schemes in the project"
@@ -60,9 +83,9 @@ namespace :build do
     end
     $CONFIGURATIONS.each do |configuration|
       # define `build:CONFIGURATION` task
-      desc "build primary target (currently \"#{$SCHEMES.first}\") with configuration \"#{configuration}\""
+      desc "build primary target (currently \"#{$PRIMARY_SCHEME}\") with configuration \"#{configuration}\""
       task "#{configuration}" do
-        build $SCHEMES.first, configuration
+        build $PRIMARY_SCHEME, configuration
       end
       # dfine `build:SCHEME:CONFIGURATION` task
       desc "build \"#{scheme}\" with configuration \"#{configuration}\""
@@ -73,17 +96,6 @@ namespace :build do
   end
 end
 
-def project_or_workspace
-  if $WORKSPACE
-    "-workspace #{$WORKSPACE}"
-  else
-    "-project #{$PROJECT}"
-  end
-end
-# run tests
-def test(scheme)
-  system "xctool -sdk iphonesimulator #{project_or_workspace} -scheme #{scheme.shellescape} test -parallelize -test-sdk iphonesimulator"
-end
 desc "=> test:alls"
 task :test => "test:all"
 namespace :test do
@@ -106,9 +118,6 @@ end
 # clean
 # clean:all
 # clean:SCHEME
-def clean (scheme)
-  system "xctool clean #{project_or_workspace} -scheme #{scheme.shellescape}"
-end
 desc "=> clean:all"
 task :clean => "clean:all"
 namespace :clean do
@@ -187,13 +196,9 @@ namespace :update do |t, args|
   end
 end
 
-# create archive
-def archive(scheme)
-  system "xctool #{project_or_workspace} archive -scheme #{scheme.shellescape}"
-end
-desc "create archive of primary scheme (currently \"#{$SCHEMES.first}\")"
+desc "create archive of primary scheme (currently \"#{$PRIMARY_SCHEME}\")"
 task :archive do
-  archive $SCHEMES.first
+  archive $PRIMARY_SCHEME
 end
 namespace :archive do |t, args|
   $SCHEMES.each do |scheme|

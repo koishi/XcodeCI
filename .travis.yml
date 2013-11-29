@@ -3,6 +3,4 @@ language: objective-c
 before_install:
   - gem install cocoapods
 script:
-  - rake clean:all
-  - rake build:all
-  - rake test:all
+  - rake
