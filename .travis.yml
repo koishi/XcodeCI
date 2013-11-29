@@ -1,4 +1,6 @@
 language: objective-c
 
 script:
-  - rake clean build:test test
+  - rake clean:all
+  - rake build:all
+  - rake test:all
