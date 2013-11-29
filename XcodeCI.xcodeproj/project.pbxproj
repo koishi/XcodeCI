@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3740186FB8644A51B4CE4789 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B2D851B6EE41EF8E96726E /* libPods.a */; };
+		4EF5F703B6754A8F94C1436A /* libPods-XcodeCITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E0197F8BBB4E23B129E0CF /* libPods-XcodeCITests.a */; };
 		A6506AA118365DF700072EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA018365DF700072EF3 /* Foundation.framework */; };
 		A6506AA318365DF700072EF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA218365DF700072EF3 /* CoreGraphics.framework */; };
 		A6506AA518365DF700072EF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA418365DF700072EF3 /* UIKit.framework */; };
@@ -22,6 +24,22 @@
 		A6506AC518365DF700072EF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA418365DF700072EF3 /* UIKit.framework */; };
 		A6506ACD18365DF700072EF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6506ACB18365DF700072EF3 /* InfoPlist.strings */; };
 		A6506ACF18365DF700072EF3 /* XcodeCITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6506ACE18365DF700072EF3 /* XcodeCITests.m */; };
+		A67F9B201847A36D00F39138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA018365DF700072EF3 /* Foundation.framework */; };
+		A67F9B211847A36D00F39138 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA218365DF700072EF3 /* CoreGraphics.framework */; };
+		A67F9B221847A36D00F39138 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA418365DF700072EF3 /* UIKit.framework */; };
+		A67F9B281847A36D00F39138 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67F9B261847A36D00F39138 /* InfoPlist.strings */; };
+		A67F9B2A1847A36D00F39138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67F9B291847A36D00F39138 /* main.m */; };
+		A67F9B2E1847A36D00F39138 /* XCIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67F9B2D1847A36D00F39138 /* XCIAppDelegate.m */; };
+		A67F9B311847A36D00F39138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67F9B2F1847A36D00F39138 /* Main.storyboard */; };
+		A67F9B341847A36D00F39138 /* XCIMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67F9B331847A36D00F39138 /* XCIMasterViewController.m */; };
+		A67F9B371847A36D00F39138 /* XCIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67F9B361847A36D00F39138 /* XCIDetailViewController.m */; };
+		A67F9B391847A36D00F39138 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67F9B381847A36D00F39138 /* Images.xcassets */; };
+		A67F9B3F1847A36D00F39138 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AC218365DF700072EF3 /* XCTest.framework */; };
+		A67F9B401847A36D00F39138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA018365DF700072EF3 /* Foundation.framework */; };
+		A67F9B411847A36D00F39138 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6506AA418365DF700072EF3 /* UIKit.framework */; };
+		A67F9B491847A36D00F39138 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67F9B471847A36D00F39138 /* InfoPlist.strings */; };
+		A67F9B4B1847A36D00F39138 /* XcodeCI_iPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A67F9B4A1847A36D00F39138 /* XcodeCI_iPadTests.m */; };
+		D21B088D32284874A1A4CA61 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B2D851B6EE41EF8E96726E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +50,19 @@
 			remoteGlobalIDString = A6506A9C18365DF700072EF3;
 			remoteInfo = XcodeCI;
 		};
+		A67F9B421847A36D00F39138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6506A9518365DF600072EF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A67F9B1E1847A36D00F39138;
+			remoteInfo = "XcodeCI iPad";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1913373D000941B7A00DBCA6 /* Pods-XcodeCITests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeCITests.xcconfig"; path = "Pods/Pods-XcodeCITests.xcconfig"; sourceTree = "<group>"; };
+		575263B8AB9D43E38CBD07CA /* libPods-XcodeCI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XcodeCI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E0197F8BBB4E23B129E0CF /* libPods-XcodeCITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XcodeCITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6506A9D18365DF700072EF3 /* XcodeCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6506AA018365DF700072EF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6506AA218365DF700072EF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +87,26 @@
 		A6506AE3183680A500072EF3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A6506AE4183680A500072EF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A6506AE5183680A500072EF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A67F9B1F1847A36D00F39138 /* XcodeCI iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XcodeCI iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67F9B251847A36D00F39138 /* XcodeCI iPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeCI iPad-Info.plist"; sourceTree = "<group>"; };
+		A67F9B271847A36D00F39138 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A67F9B291847A36D00F39138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A67F9B2B1847A36D00F39138 /* XcodeCI iPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeCI iPad-Prefix.pch"; sourceTree = "<group>"; };
+		A67F9B2C1847A36D00F39138 /* XCIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCIAppDelegate.h; sourceTree = "<group>"; };
+		A67F9B2D1847A36D00F39138 /* XCIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCIAppDelegate.m; sourceTree = "<group>"; };
+		A67F9B301847A36D00F39138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A67F9B321847A36D00F39138 /* XCIMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCIMasterViewController.h; sourceTree = "<group>"; };
+		A67F9B331847A36D00F39138 /* XCIMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCIMasterViewController.m; sourceTree = "<group>"; };
+		A67F9B351847A36D00F39138 /* XCIDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCIDetailViewController.h; sourceTree = "<group>"; };
+		A67F9B361847A36D00F39138 /* XCIDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCIDetailViewController.m; sourceTree = "<group>"; };
+		A67F9B381847A36D00F39138 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A67F9B3E1847A36D00F39138 /* XcodeCI iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XcodeCI iPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67F9B461847A36D00F39138 /* XcodeCI iPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeCI iPadTests-Info.plist"; sourceTree = "<group>"; };
+		A67F9B481847A36D00F39138 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A67F9B4A1847A36D00F39138 /* XcodeCI_iPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeCI_iPadTests.m; sourceTree = "<group>"; };
+		A6B11453DE2A4646A0C348F3 /* Pods-XcodeCI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeCI.xcconfig"; path = "Pods/Pods-XcodeCI.xcconfig"; sourceTree = "<group>"; };
+		AC2894136EA94DA9B5D2F9FE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B6B2D851B6EE41EF8E96726E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +117,7 @@
 				A6506AA318365DF700072EF3 /* CoreGraphics.framework in Frameworks */,
 				A6506AA518365DF700072EF3 /* UIKit.framework in Frameworks */,
 				A6506AA118365DF700072EF3 /* Foundation.framework in Frameworks */,
+				D21B088D32284874A1A4CA61 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +128,28 @@
 				A6506AC318365DF700072EF3 /* XCTest.framework in Frameworks */,
 				A6506AC518365DF700072EF3 /* UIKit.framework in Frameworks */,
 				A6506AC418365DF700072EF3 /* Foundation.framework in Frameworks */,
+				4EF5F703B6754A8F94C1436A /* libPods-XcodeCITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67F9B1C1847A36D00F39138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67F9B211847A36D00F39138 /* CoreGraphics.framework in Frameworks */,
+				A67F9B221847A36D00F39138 /* UIKit.framework in Frameworks */,
+				A67F9B201847A36D00F39138 /* Foundation.framework in Frameworks */,
+				3740186FB8644A51B4CE4789 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67F9B3B1847A36D00F39138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67F9B3F1847A36D00F39138 /* XCTest.framework in Frameworks */,
+				A67F9B411847A36D00F39138 /* UIKit.framework in Frameworks */,
+				A67F9B401847A36D00F39138 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +161,13 @@
 			children = (
 				A6506AA618365DF700072EF3 /* XcodeCI */,
 				A6506AC818365DF700072EF3 /* XcodeCITests */,
+				A67F9B231847A36D00F39138 /* XcodeCI iPad */,
+				A67F9B441847A36D00F39138 /* XcodeCI iPadTests */,
 				A6506A9F18365DF700072EF3 /* Frameworks */,
 				A6506A9E18365DF700072EF3 /* Products */,
+				A6B11453DE2A4646A0C348F3 /* Pods-XcodeCI.xcconfig */,
+				1913373D000941B7A00DBCA6 /* Pods-XcodeCITests.xcconfig */,
+				AC2894136EA94DA9B5D2F9FE /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +176,8 @@
 			children = (
 				A6506A9D18365DF700072EF3 /* XcodeCI.app */,
 				A6506AC118365DF700072EF3 /* XcodeCITests.xctest */,
+				A67F9B1F1847A36D00F39138 /* XcodeCI iPad.app */,
+				A67F9B3E1847A36D00F39138 /* XcodeCI iPadTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +190,9 @@
 				A6506AA418365DF700072EF3 /* UIKit.framework */,
 				A6506AC218365DF700072EF3 /* XCTest.framework */,
 				A6506AE2183680A500072EF3 /* Other Frameworks */,
+				575263B8AB9D43E38CBD07CA /* libPods-XcodeCI.a */,
+				78E0197F8BBB4E23B129E0CF /* libPods-XcodeCITests.a */,
+				B6B2D851B6EE41EF8E96726E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,6 +252,51 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		A67F9B231847A36D00F39138 /* XcodeCI iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A67F9B2C1847A36D00F39138 /* XCIAppDelegate.h */,
+				A67F9B2D1847A36D00F39138 /* XCIAppDelegate.m */,
+				A67F9B2F1847A36D00F39138 /* Main.storyboard */,
+				A67F9B321847A36D00F39138 /* XCIMasterViewController.h */,
+				A67F9B331847A36D00F39138 /* XCIMasterViewController.m */,
+				A67F9B351847A36D00F39138 /* XCIDetailViewController.h */,
+				A67F9B361847A36D00F39138 /* XCIDetailViewController.m */,
+				A67F9B381847A36D00F39138 /* Images.xcassets */,
+				A67F9B241847A36D00F39138 /* Supporting Files */,
+			);
+			path = "XcodeCI iPad";
+			sourceTree = "<group>";
+		};
+		A67F9B241847A36D00F39138 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A67F9B251847A36D00F39138 /* XcodeCI iPad-Info.plist */,
+				A67F9B261847A36D00F39138 /* InfoPlist.strings */,
+				A67F9B291847A36D00F39138 /* main.m */,
+				A67F9B2B1847A36D00F39138 /* XcodeCI iPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A67F9B441847A36D00F39138 /* XcodeCI iPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				A67F9B4A1847A36D00F39138 /* XcodeCI_iPadTests.m */,
+				A67F9B451847A36D00F39138 /* Supporting Files */,
+			);
+			path = "XcodeCI iPadTests";
+			sourceTree = "<group>";
+		};
+		A67F9B451847A36D00F39138 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A67F9B461847A36D00F39138 /* XcodeCI iPadTests-Info.plist */,
+				A67F9B471847A36D00F39138 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +304,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6506AD218365DF700072EF3 /* Build configuration list for PBXNativeTarget "XcodeCI" */;
 			buildPhases = (
+				4372DE7FABB64FF796A7DDC2 /* Check Pods Manifest.lock */,
 				A6506A9918365DF700072EF3 /* Sources */,
 				A6506A9A18365DF700072EF3 /* Frameworks */,
 				A6506A9B18365DF700072EF3 /* Resources */,
+				B673FE2514FE4A318582BFE4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,9 +323,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6506AD518365DF700072EF3 /* Build configuration list for PBXNativeTarget "XcodeCITests" */;
 			buildPhases = (
+				2D5CDFE6925E4598995442E1 /* Check Pods Manifest.lock */,
 				A6506ABD18365DF700072EF3 /* Sources */,
 				A6506ABE18365DF700072EF3 /* Frameworks */,
 				A6506ABF18365DF700072EF3 /* Resources */,
+				A2D04F78C6F142EE9F385026 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +337,43 @@
 			name = XcodeCITests;
 			productName = XcodeCITests;
 			productReference = A6506AC118365DF700072EF3 /* XcodeCITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A67F9B1E1847A36D00F39138 /* XcodeCI iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67F9B501847A36D00F39138 /* Build configuration list for PBXNativeTarget "XcodeCI iPad" */;
+			buildPhases = (
+				D8ADCA3E1B0445FBB98252BC /* Check Pods Manifest.lock */,
+				A67F9B1B1847A36D00F39138 /* Sources */,
+				A67F9B1C1847A36D00F39138 /* Frameworks */,
+				A67F9B1D1847A36D00F39138 /* Resources */,
+				E4DF41535662451E95FC637E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XcodeCI iPad";
+			productName = "XcodeCI iPad";
+			productReference = A67F9B1F1847A36D00F39138 /* XcodeCI iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A67F9B3D1847A36D00F39138 /* XcodeCI iPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67F9B511847A36D00F39138 /* Build configuration list for PBXNativeTarget "XcodeCI iPadTests" */;
+			buildPhases = (
+				A67F9B3A1847A36D00F39138 /* Sources */,
+				A67F9B3B1847A36D00F39138 /* Frameworks */,
+				A67F9B3C1847A36D00F39138 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A67F9B431847A36D00F39138 /* PBXTargetDependency */,
+			);
+			name = "XcodeCI iPadTests";
+			productName = "XcodeCI iPadTests";
+			productReference = A67F9B3E1847A36D00F39138 /* XcodeCI iPadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -220,6 +387,9 @@
 				ORGANIZATIONNAME = "Yusuke Sakurai";
 				TargetAttributes = {
 					A6506AC018365DF700072EF3 = {
+						TestTargetID = A6506A9C18365DF700072EF3;
+					};
+					A67F9B3D1847A36D00F39138 = {
 						TestTargetID = A6506A9C18365DF700072EF3;
 					};
 				};
@@ -239,6 +409,8 @@
 			targets = (
 				A6506A9C18365DF700072EF3 /* XcodeCI */,
 				A6506AC018365DF700072EF3 /* XcodeCITests */,
+				A67F9B1E1847A36D00F39138 /* XcodeCI iPad */,
+				A67F9B3D1847A36D00F39138 /* XcodeCI iPadTests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,7 +434,118 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A67F9B1D1847A36D00F39138 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67F9B391847A36D00F39138 /* Images.xcassets in Resources */,
+				A67F9B281847A36D00F39138 /* InfoPlist.strings in Resources */,
+				A67F9B311847A36D00F39138 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67F9B3C1847A36D00F39138 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67F9B491847A36D00F39138 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D5CDFE6925E4598995442E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4372DE7FABB64FF796A7DDC2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2D04F78C6F142EE9F385026 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-XcodeCITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B673FE2514FE4A318582BFE4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8ADCA3E1B0445FBB98252BC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4DF41535662451E95FC637E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6506A9918365DF700072EF3 /* Sources */ = {
@@ -284,6 +567,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A67F9B1B1847A36D00F39138 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67F9B2A1847A36D00F39138 /* main.m in Sources */,
+				A67F9B341847A36D00F39138 /* XCIMasterViewController.m in Sources */,
+				A67F9B371847A36D00F39138 /* XCIDetailViewController.m in Sources */,
+				A67F9B2E1847A36D00F39138 /* XCIAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67F9B3A1847A36D00F39138 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67F9B4B1847A36D00F39138 /* XcodeCI_iPadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +593,11 @@
 			isa = PBXTargetDependency;
 			target = A6506A9C18365DF700072EF3 /* XcodeCI */;
 			targetProxy = A6506AC618365DF700072EF3 /* PBXContainerItemProxy */;
+		};
+		A67F9B431847A36D00F39138 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A67F9B1E1847A36D00F39138 /* XcodeCI iPad */;
+			targetProxy = A67F9B421847A36D00F39138 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -315,6 +622,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				A6506ACC18365DF700072EF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A67F9B261847A36D00F39138 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67F9B271847A36D00F39138 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A67F9B2F1847A36D00F39138 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67F9B301847A36D00F39138 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A67F9B471847A36D00F39138 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67F9B481847A36D00F39138 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -394,6 +725,7 @@
 		};
 		A6506AD318365DF700072EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2894136EA94DA9B5D2F9FE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -407,6 +739,7 @@
 		};
 		A6506AD418365DF700072EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2894136EA94DA9B5D2F9FE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -420,6 +753,7 @@
 		};
 		A6506AD618365DF700072EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1913373D000941B7A00DBCA6 /* Pods-XcodeCITests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeCI.app/XcodeCI";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -442,6 +776,7 @@
 		};
 		A6506AD718365DF700072EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1913373D000941B7A00DBCA6 /* Pods-XcodeCITests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeCI.app/XcodeCI";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -452,6 +787,84 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeCI/XcodeCI-Prefix.pch";
 				INFOPLIST_FILE = "XcodeCITests/XcodeCITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		A67F9B4C1847A36D00F39138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2894136EA94DA9B5D2F9FE /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeCI iPad/XcodeCI iPad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "XcodeCI iPad/XcodeCI iPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A67F9B4D1847A36D00F39138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2894136EA94DA9B5D2F9FE /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeCI iPad/XcodeCI iPad-Prefix.pch";
+				INFOPLIST_FILE = "XcodeCI iPad/XcodeCI iPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A67F9B4E1847A36D00F39138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeCI.app/XcodeCI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeCI iPad/XcodeCI iPad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "XcodeCI iPadTests/XcodeCI iPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A67F9B4F1847A36D00F39138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XcodeCI.app/XcodeCI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeCI iPad/XcodeCI iPad-Prefix.pch";
+				INFOPLIST_FILE = "XcodeCI iPadTests/XcodeCI iPadTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -484,6 +897,24 @@
 			buildConfigurations = (
 				A6506AD618365DF700072EF3 /* Debug */,
 				A6506AD718365DF700072EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67F9B501847A36D00F39138 /* Build configuration list for PBXNativeTarget "XcodeCI iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67F9B4C1847A36D00F39138 /* Debug */,
+				A67F9B4D1847A36D00F39138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67F9B511847A36D00F39138 /* Build configuration list for PBXNativeTarget "XcodeCI iPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67F9B4E1847A36D00F39138 /* Debug */,
+				A67F9B4F1847A36D00F39138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A6506A9C18365DF700072EF3"
-               BuildableName = "XcodeCI.app"
-               BlueprintName = "XcodeCI"
+               BlueprintIdentifier = "A67F9B1E1847A36D00F39138"
+               BuildableName = "XcodeCI iPad.app"
+               BlueprintName = "XcodeCI iPad"
                ReferencedContainer = "container:XcodeCI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,33 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A6506AC018365DF700072EF3"
-               BuildableName = "XcodeCITests.xctest"
-               BlueprintName = "XcodeCITests"
-               ReferencedContainer = "container:XcodeCI.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A67F9B3D1847A36D00F39138"
-               BuildableName = "XcodeCI iPadTests.xctest"
-               BlueprintName = "XcodeCI iPadTests"
-               ReferencedContainer = "container:XcodeCI.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A6506A9C18365DF700072EF3"
-            BuildableName = "XcodeCI.app"
-            BlueprintName = "XcodeCI"
+            BlueprintIdentifier = "A67F9B1E1847A36D00F39138"
+            BuildableName = "XcodeCI iPad.app"
+            BlueprintName = "XcodeCI iPad"
             ReferencedContainer = "container:XcodeCI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -71,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A6506A9C18365DF700072EF3"
-            BuildableName = "XcodeCI.app"
-            BlueprintName = "XcodeCI"
+            BlueprintIdentifier = "A67F9B1E1847A36D00F39138"
+            BuildableName = "XcodeCI iPad.app"
+            BlueprintName = "XcodeCI iPad"
             ReferencedContainer = "container:XcodeCI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -89,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A6506A9C18365DF700072EF3"
-            BuildableName = "XcodeCI.app"
-            BlueprintName = "XcodeCI"
+            BlueprintIdentifier = "A67F9B1E1847A36D00F39138"
+            BuildableName = "XcodeCI iPad.app"
+            BlueprintName = "XcodeCI iPad"
             ReferencedContainer = "container:XcodeCI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
