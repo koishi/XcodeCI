@@ -1,11 +1,28 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, "6.0"
+# プラットフォームの指定
+platform :ios, "7.0"
 
-target "XcodeCI" do
+# Xcodeプロジェクトまたはワークスペースの指定
+xcodeproj "XcodeCI"
+workspace "XcodeCI"
 
+# Podパッケージをリンクさせるターゲット
+link_with "XodeCI", "XcodeCI iPad"
+# 使用するパッケージとバージョンの宣言
+pod "AFNetworking", "~> 2.0.0"
+
+# インストール前に行われるアクション
+pre_install do |installer_representation|
+  system "gem update --system"
+  system "gem update cocoapods"
+  p "install started"
 end
 
-target "XcodeCITests" do
-
+# ターゲット別の使用パッケージの宣言
+target "XcodeCITests", :exclusive => true do
+  pod "Kiwi/XCTest"
 end
 
+# インストール後に行われるアクション
+post_install do |installer_representation|
+  p "install finished!"
+end
